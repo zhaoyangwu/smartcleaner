@@ -1,126 +1,299 @@
-Smart Cleaner Privacy Policy
+SMART CLEANER PRIVACY POLICY
+
 Effective date: October 26, 2026
-Last updated: November 17, 2026
+Last updated: November 23, 2026
+
 Smart Cleaner is provided by GenieLampApp ("GenieLampApp," "we," "us," or "our"). This Privacy Policy explains how Smart Cleaner (the "App") accesses and handles information when you use its device storage, media cleanup, app management, notification cleanup, device information, and flashlight features.
 
-This Policy describes Smart Cleaner version 1.2.17 (versionCode 26), package name com.smartclean.storage.junk.aicleaner, as reviewed on the date above.
+This Policy applies to Smart Cleaner (package name com.smartclean.storage.junk.aicleaner) and all subsequent versions until replaced by a newer Policy.
 
-1 Privacy Summary for the Current Release
-Smart Cleaner 1.2.17 performs its scans and processing on your device.
+1. Privacy Summary
 
-INTERNET supports enabled Google Analytics, Google Mobile Ads, privacy-choice updates, and Google Play Billing. ACCESS_NETWORK_STATE supports connection handling and the device-information screen. Google SDK components may merge WAKE_LOCK for reliable background work. Smart Cleaner does not request location permission for these services. The advertising SDK may use the Android Advertising ID where available and permitted.
-Smart Cleaner uses Google Mobile Ads SDK for app-open, native, and interstitial ads. Google may process the IP address, approximate location derived from it, device or advertising identifiers, diagnostics, and ad interactions to provide, measure, and protect ads. Where required, Google User Messaging Platform presents privacy choices before eligible ad requests. Turning usage analytics off does not turn ads off. Smart Cleaner does not send file contents, photos, videos, notification text, or the installed-app list to the advertising SDK.
-Usage analytics is enabled by default after this Privacy Policy is accepted. Users who accepted an earlier policy also have it enabled after updating to this version. You can turn it off in Settings. Google Analytics receives an SDK-generated app instance identifier, interaction and session data, device and app technical information, and an approximate region derived from the IP address, without location permission. Smart Cleaner also sends fixed events for feature pages, scan results, action confirmations, and cleanup results, including counts, status, and duration. Analytics is not fully anonymous. It does not receive file contents, names, paths, hashes, photos, videos, notification content, your installed-app list, or cross-app usage details. Local cleanup remains available when analytics is turned off. Events also record entry locations, feature clicks, permission-flow states, and aggregate sizes of confirmed file operations. Permanently deleted bytes and bytes moved to trash are reported separately; neither is a measurement of freed disk space.
-The App does not sell personal or sensitive user data.
-A file is removed only after you select or confirm a cleanup action. An app is uninstalled only through Android's system confirmation interface.
-2 Information Accessed and Processed on Your Device
-Files Photos and Videos
+Smart Cleaner performs its scans and processing on your device.
+
+Smart Cleaner does not operate a server that stores your files, photos, videos, notifications, or installed-app list. There is no account to create and no cloud library on our side.
+
+The App uses the following Google services, each of which is described in full in Sections 2 and 5:
+
+Google Mobile Ads (AdMob) — app-open, native, and interstitial advertising.
+Google User Messaging Platform (UMP) — advertising privacy choices.
+Google Analytics for Firebase — usage analytics.
+Google Play Billing — subscription discovery and purchase.
+
+In short:
+
+Your files, photos, videos, notification text, and installed-app list are processed locally and are never uploaded — not to us, and not to the advertising SDK.
+Ads are supported by Google Mobile Ads, which may process your IP address, an approximate region derived from it, device or advertising identifiers, diagnostics, and ad interactions.
+The App uses Google Analytics for Firebase to understand how features are used (see Section 5.1).
+We do not sell personal information.
+The App does not request location permission.
+
+2. Information Accessed and Processed on Your Device
+
+2.1 Files, Photos, and Videos
+
 When you start a scan or open a cleanup feature, Smart Cleaner may access user-accessible shared storage and authorized media to:
 
-Read technical attributes such as file size, file type or format, available creation or modification time, storage category or location, and video duration;
-Find temporary files, manageable cache files, redundant APK files, large files, screenshots, possible duplicate photos, and large videos;
-Organize and display cleanup candidates for your review; and
-Remove only the items you select and confirm.
-Scanning, classification, and duplicate checks happen locally. Exact duplicate photo checks compare file sizes, calculate SHA-256 hashes, and compare file bytes to identify fully identical files. Similar-photo checks locally decode bounded, reduced-size samples and compare visual features to group photos that may look alike, including screenshots. Similar-photo candidates can have important differences and are not treated as identical. Smart Cleaner does not upload images for these checks, perform OCR or face, object, or subject recognition, listen to audio, or perform server-side content analysis.
+read technical attributes such as file size, file type or format, available creation or modification time, storage category or location, and video duration;
+find temporary files, manageable cache files, redundant APK files, large files, screenshots, possible duplicate photos, and large videos;
+organize and display cleanup candidates for your review; and
+remove only the items you select and confirm.
 
-To display a thumbnail or preview that helps you review an item, Android or Smart Cleaner may locally decode enough of that photo or video to present it on your screen. This display-only access stays on the device and is not an upload. Exact duplicate results identify files with matching bytes. Similar-photo groups are review candidates only: no photo is selected by default, you should preview photos before choosing copies to remove, and you must keep at least one photo in each group.
+Scanning, classification, and duplicate checks happen locally.
+
+Exact duplicate checks compare file sizes, calculate SHA-256 hashes, and compare file bytes to identify fully identical files.
+
+Similar-photo checks locally decode bounded, reduced-size samples and compare visual features to group photos that may look alike, including screenshots. Similar-photo candidates can have important differences and are not treated as identical.
+
+Smart Cleaner does not upload images for these checks, perform OCR or face, object, or subject recognition, listen to audio, or perform server-side content analysis.
+
+To display a thumbnail or preview that helps you review an item, Android or Smart Cleaner may locally decode enough of that photo or video to present it on your screen. This display-only access stays on the device and is not an upload.
+
+Exact duplicate results identify files with matching bytes. Similar-photo groups are review candidates only: no photo is selected by default, you should preview photos before choosing copies to remove, and you must keep at least one photo in each group.
 
 Smart Cleaner respects Android storage restrictions and does not use storage permissions to access another app's private internal storage.
 
-Installed Apps and App Usage Statistics
-For app management features, Smart Cleaner may locally process information made available by Android about apps visible to it, including an app's name, package name, icon, storage or cache usage, last-used time, and Wi-Fi or mobile-data usage statistics.
+2.2 Installed Apps and App Usage Statistics
+
+For app-management features, Smart Cleaner may locally process information made available by Android about apps visible to it, including an app's name, package name, icon, storage or cache usage, last-used time, and Wi-Fi or mobile-data usage statistics.
 
 This information is used only to display app-management information and help you choose whether to open Android's uninstall flow. Smart Cleaner does not read the private files of other apps, build advertising profiles, or silently uninstall apps.
 
-Current Notifications
+2.3 Current Notifications
+
 If you enable Notification Access in Android settings, Smart Cleaner may read the title, text, and source app of active notifications so it can display them for review. If you select an eligible notification for removal, the App asks Android to dismiss it.
 
 Smart Cleaner does not reply to messages, does not retain a history of notification text, and does not upload notification information.
 
-Device Storage and Network State
+2.4 Device Storage and Network State
+
 Smart Cleaner may locally read total, used, and available storage, the current active network state, and local network information for display in the device-information screen. ACCESS_NETWORK_STATE does not give the App internet connectivity, and this information is not uploaded.
 
-Local Preferences and Recovery State
+2.5 Local Preferences and Recovery State
+
 The App may store feature preferences and limited operation-recovery state locally on your device so that settings and an interrupted user action can be restored. These local records do not contain uploaded copies of your photos, videos, files, notification text, or installed-app data.
 
-3 Permissions and Special Access
-Smart Cleaner may offer a permission setup guide on first launch and remind you about missing access when you open the App again. It also requests relevant access when you use a feature that requires it. You can grant, decline or skip an item and continue using features that do not require it. The exact prompt and available scope depend on your Android version and device manufacturer.
+3. Permissions and Special Access
+
+Smart Cleaner may offer a permission setup guide on first launch and remind you about missing access when you open the App again. It also requests relevant access when you use a feature that requires it. You can grant, decline, or skip an item and continue using features that do not require it. The exact prompt and available scope depend on your Android version and device manufacturer.
 
 All Files Access
+
 On Android 11 and later, this special access supports Smart Cleaner's core storage-cleanup function by scanning user-accessible shared folders for temporary files, manageable cache files, redundant APK files, and large non-media files. It is used when MediaStore or a folder-by-folder Storage Access Framework selection cannot provide the device-wide cleanup view requested by the user. It does not bypass Android restrictions or permit access to another app's private internal storage.
 
 Legacy Storage Access
+
 On older Android versions, these permissions support reading eligible shared files and deleting user-selected shared files. READ_EXTERNAL_STORAGE is limited to Android API 32 and below, and WRITE_EXTERNAL_STORAGE is limited to Android API 29 and below.
 
 Photos and Videos
+
 On Android 13 and later, these permissions support user-initiated screenshot, possible duplicate-photo, image-preview, video-cleanup, thumbnail, duration, and preview features across the media scope you authorize. If you grant access only to selected photos and videos on Android 14 or later, READ_MEDIA_VISUAL_USER_SELECTED limits the App to that selection.
 
 Usage Access
+
 If enabled in Android settings, Usage Access allows the App to read the system-provided app storage, cache, last-used, and network-usage statistics described above. It does not allow Smart Cleaner to read another app's private content.
 
 Installed App Visibility
+
 On supported devices, Smart Cleaner may use a manufacturer-specific installed-app permission, such as Xiaomi's com.android.permission.GET_INSTALLED_APPS, together with Android package visibility declarations, to show apps visible to Android. The current release does not request QUERY_ALL_PACKAGES.
 
 App Uninstall Requests
+
 This permission allows Smart Cleaner to open Android's uninstall confirmation screen for an app you select. Smart Cleaner cannot silently uninstall an app.
 
 Notification Access and Notification Permission
+
 Notification Access is special access that you enable separately in Android settings. It allows the current-notification review and dismissal functions described above. POST_NOTIFICATIONS is different: it allows Smart Cleaner to place local tool shortcuts in the notification shade and does not allow the App to read other apps' notifications. The current release does not use remote push notifications.
 
 Camera Permission
+
 The camera permission is used only to switch the device flashlight on or off through Android's CameraManager. Smart Cleaner does not use this permission to take photos or record video or audio.
 
-Network State
+Network and Wake Lock
+
 INTERNET supports enabled Google Analytics, Google Mobile Ads, privacy-choice updates, and Google Play Billing. ACCESS_NETWORK_STATE supports connection handling and the device-information screen. Google SDK components may merge WAKE_LOCK for reliable background work. Smart Cleaner does not request location permission for these services. The advertising SDK may use the Android Advertising ID where available and permitted.
 
-Smart Cleaner uses Google Mobile Ads SDK for app-open, native, and interstitial ads. Google may process the IP address, approximate location derived from it, device or advertising identifiers, diagnostics, and ad interactions to provide, measure, and protect ads. Where required, Google User Messaging Platform presents privacy choices before eligible ad requests. Turning usage analytics off does not turn ads off. Smart Cleaner does not send file contents, photos, videos, notification text, or the installed-app list to the advertising SDK.
+4. User-Initiated Actions and External Apps
 
-4 User Initiated Actions and External Apps
 File Deletion
+
 Smart Cleaner shows cleanup candidates for your review. Files are removed only after you select or confirm the action. Depending on your Android version, the system may display an additional confirmation. Deletion may be permanent, so review selected items and keep backups of important files.
 
 App Removal
+
 When you choose to remove an app, Smart Cleaner opens Android's uninstall confirmation screen. Android, not Smart Cleaner, performs the uninstall after your confirmation.
 
 External File Preview
+
 If you choose to open a supported file in another app, Smart Cleaner may use Android's ACTION_VIEW mechanism and grant that app temporary access to the selected file URI. This action is initiated by you. The receiving app handles the file under its own privacy policy, and Smart Cleaner does not control what that app does after you choose it.
 
 Flashlight and Local Notification Shortcuts
+
 The flashlight is activated only when you use the flashlight control. Local notification-shade shortcuts are generated on the device and are not remote messages.
 
-5 Collection Sharing and Sale
-Usage analytics is enabled by default after this Privacy Policy is accepted. Users who accepted an earlier policy also have it enabled after updating to this version. You can turn it off in Settings. Google Analytics receives an SDK-generated app instance identifier, interaction and session data, device and app technical information, and an approximate region derived from the IP address, without location permission. Smart Cleaner also sends fixed events for feature pages, scan results, action confirmations, and cleanup results, including counts, status, and duration. Analytics is not fully anonymous. It does not receive file contents, names, paths, hashes, photos, videos, notification content, your installed-app list, or cross-app usage details. Local cleanup remains available when analytics is turned off. Events also record entry locations, feature clicks, permission-flow states, and aggregate sizes of confirmed file operations. Permanently deleted bytes and bytes moved to trash are reported separately; neither is a measurement of freed disk space.
+5. Analytics, Advertising, and Subscriptions
 
-Smart Cleaner uses Google Mobile Ads SDK for app-open, native, and interstitial ads. Google may process the IP address, approximate location derived from it, device or advertising identifiers, diagnostics, and ad interactions to provide, measure, and protect ads. Where required, Google User Messaging Platform presents privacy choices before eligible ad requests. Turning usage analytics off does not turn ads off. Smart Cleaner does not send file contents, photos, videos, notification text, or the installed-app list to the advertising SDK.
+5.1 Usage Analytics (Google Analytics for Firebase)
 
-Google Analytics provides optional usage analytics, Google Mobile Ads and AdMob provide advertising, Google User Messaging Platform manages applicable advertising privacy choices, and Google Play Billing provides subscription discovery and purchase services. Smart Cleaner does not use FCM remote push or Crashlytics in this release.
+Usage analytics is enabled by default after this Privacy Policy is accepted. Users who accepted an earlier policy also have it enabled after updating to this version. The App does not provide a separate analytics toggle. Analytics collection from your device stops when you uninstall the App.
 
-6 Retention and Deletion
+Google Analytics for Firebase receives:
+
+an SDK-generated app instance identifier;
+interaction and session data;
+device and app technical information;
+an approximate region derived from the IP address, without location permission.
+
+Smart Cleaner also sends fixed events for feature pages, scan results, action confirmations, and cleanup results, including counts, status, and duration. Events also record entry locations, feature clicks, permission-flow states, and aggregate sizes of confirmed file operations. Permanently deleted bytes and bytes moved to trash are reported separately; neither is a measurement of freed disk space.
+
+Analytics is not fully anonymous. It does not receive file contents, file names, file paths, hashes, photos, videos, notification content, your installed-app list, or cross-app usage details.
+
+5.2 Advertising (Google Mobile Ads / AdMob)
+
+Smart Cleaner uses the Google Mobile Ads SDK to display app-open, native, and interstitial ads.
+
+Google may process the following to provide, measure, and protect advertising:
+
+IP address and an approximate location derived from it;
+device or advertising identifiers (including the Android Advertising ID where available and permitted);
+diagnostics;
+ad interactions (impressions, clicks).
+
+Where required, Google User Messaging Platform presents privacy choices before eligible ad requests.
+
+Ads and analytics are separate. Smart Cleaner does not send file contents, photos, videos, notification text, or your installed-app list to the advertising SDK. All scanning and comparison happens locally.
+
+5.3 Subscriptions and Purchases
+
+Smart Cleaner offers optional auto-renewing subscriptions that remove ads. All cleaning tools remain free.
+
+All payments are processed by Google Play. We never receive or store your card number, billing address, or full payment details.
+
+To provide the subscription, the App processes:
+
+the Google Play product identifier (weekly, monthly, or yearly plan);
+the purchase token and purchase state returned by Google Play Billing;
+the subscription expiry time.
+
+This information is verified with Google Play and stored locally on your device so the App knows whether to hide ads. It is:
+
+not used for advertising;
+not shared with advertisers;
+not uploaded to our own servers.
+
+You can view, manage, or cancel your subscription at any time in Google Play (Play Store, then Payments and subscriptions). Cancelling stops future renewals; the ad-free entitlement remains until the paid period ends. We do not offer free trials.
+
+6. Collection, Sharing, and Sale
+
+We do not sell personal information for money.
+
+We do not share your files, photos, videos, notification content, or installed-app list with any third party. Those items are processed only on your device and are never transmitted to us or to any advertising SDK.
+
+Our advertising partner, Google, may receive device or advertising identifiers, an IP address, and ad-interaction data in order to deliver and measure advertising. If you wish to exercise a privacy right available to you under applicable law, including any right to opt out of the sale or sharing of personal information, contact us using the details in Section 14.
+
+6.1 Categories of Information
+
+Identifiers — advertising ID, app instance ID, IP address. Purpose: advertising, analytics. Shared with: Google.
+
+Internet or network activity — ad impressions, clicks, in-app events. Purpose: advertising, analytics. Shared with: Google.
+
+Device information — device model, OS version, language, approximate region. Purpose: analytics, diagnostics. Shared with: Google.
+
+Commercial information — subscription plan and purchase state. Purpose: billing. Shared with: Google Play.
+
+We do not collect: precise geolocation, biometric data, health data, financial account numbers, government identifiers, or the contents, names, or paths of your files, photos, videos, or notifications.
+
+6.2 Third Parties
+
+Google provides the services listed in Section 1. Their handling of data is governed by Google's own privacy policy. We do not share information with any other third party for advertising or analytics purposes.
+
+7. Retention and Deletion
+
 Scan data is processed on the device. Temporary scan results may remain only as needed to display the current results or recover an interrupted operation. Preferences and recovery state remain in the App's local storage until they are replaced, cleared through Android settings, or removed when you uninstall the App. Smart Cleaner does not retain notification-text history.
 
-Turning analytics off stops future events and clears the local analytics cache and app instance identifier. It does not delete data already received by Google. Google retains that data under the project retention settings. Privacy requests may be sent through the developer contact on the Play Store listing; no server-side one-click deletion is promised.
+Analytics data already received by Google is retained under the project's retention settings, which we configure in the Google Analytics and AdMob consoles. Uninstalling the App stops any further analytics collection from your device. You may also contact us to request deletion as described below.
+
+To request deletion of your personal information, email us at genielampapp@gmail.com with the subject line "Delete My Data". We will verify the request, delete what we control, and forward the request to Google for data held in Google Analytics and Google Mobile Ads where applicable. We respond within 45 days.
 
 Deleting a file through a cleanup feature changes or removes the original item on your device and may be irreversible.
 
-7 Your Choices and Controls
+8. Your U.S. State Privacy Rights
+
+If you reside in a U.S. state with a comprehensive privacy law — including California, Virginia, Colorado, Connecticut, Utah, Texas, Oregon, and Montana — you have the following rights.
+
+Right to know — what categories of personal information we collect, the sources, the business purposes, and the categories of third parties with whom we share it.
+
+Right to delete — request deletion of personal information we hold about you.
+
+Right to correct — request correction of inaccurate personal information.
+
+Right to opt out of sale or sharing — direct us not to sell your personal information or share it for cross-context behavioral advertising.
+
+Right to limit use of sensitive personal information — we do not collect sensitive personal information.
+
+Right to non-discrimination — we will not deny service, charge different prices, or provide a different level of service because you exercised a privacy right.
+
+The categories we collect, the purposes, and the third parties are listed in Section 6.1.
+
+How to exercise your rights
+
+By email: write to genielampapp@gmail.com with the subject line "Privacy Request". Please specify which right you are exercising and the state in which you reside. We respond to verifiable requests within 45 days.
+
+Our obligations
+
+We respond to verifiable requests within 45 days, and will notify you if an extension is required.
+
+You may use an authorized agent to submit a request on your behalf, subject to verification.
+
+If we decline a request, we will explain why and tell you how to appeal.
+
+Notice at Collection: The categories listed in Section 6.1 are collected at or before the time described in Sections 2 and 5.
+
+9. Your Rights in the EEA, UK, and Switzerland
+
+If you use the App in the European Economic Area, the United Kingdom, or Switzerland, you have the right to: access your personal data; rectify it; erase it; restrict or object to processing; data portability; and withdraw consent at any time.
+
+Legal bases for processing:
+
+Consent — for personalized advertising, where consent is required. You may withdraw consent at any time through the in-app privacy prompt.
+
+Legitimate interests — for fraud prevention, security, and service diagnostics.
+
+Contract — for providing a subscription you purchased.
+
+International transfers: Google may process data in countries outside your own, including the United States. Transfers rely on appropriate safeguards such as the European Commission's Standard Contractual Clauses or the EU-U.S. Data Privacy Framework where applicable.
+
+Complaints: you may lodge a complaint with your local data protection supervisory authority.
+
+10. Your Choices and Controls
+
 You can:
 
-Decline a permission and continue using features that do not require it;
-Grant access only to selected photos and videos where Android provides that option;
-Revoke file, photo, video, camera, or notification permissions in Android settings;
-Turn off All files access, Usage Access, or Notification Access in Android's special-access settings;
-Clear Smart Cleaner's local storage or uninstall the App; and
-Choose whether to confirm any file deletion or app uninstall action.
-Turning analytics off stops future events and clears the local analytics cache and app instance identifier. It does not delete data already received by Google. Google retains that data under the project retention settings. Privacy requests may be sent through the developer contact on the Play Store listing; no server-side one-click deletion is promised.
+review each permission in Settings, then Privacy, and open the corresponding Android permission settings;
+grant access only to selected photos and videos where Android provides that option;
+revoke file, photo, video, camera, or notification permissions in Android settings;
+turn off All files access, Usage Access, or Notification Access in Android's special-access settings;
+reset or delete your Android Advertising ID in your device settings;
+manage or cancel a subscription in Google Play;
+clear Smart Cleaner's local storage or uninstall the App; and
+choose whether to confirm any file deletion or app uninstall action.
 
-8 Security
+11. Security
+
 Local processing reduces the need to transmit personal and sensitive data. Smart Cleaner relies on Android permissions, app sandboxing, and time-limited URI access for supported external previews. No storage method is completely secure, and the security of locally stored information also depends on your device, operating system, lock-screen protection, backups, and other installed apps.
 
-9 Privacy of Children
-Smart Cleaner is not directed to children under 13 or the minimum age required by applicable law. When analytics is enabled, it may process the data described above. Contact GenieLampApp through the Play Store listing if you have a concern.
+12. Children
 
-10 Changes to This Policy and the App
-We update this policy when features or data use change. Google Play handles subscription payments. Smart Cleaner checks purchases and stores the confirmed status on the device to remove ads. All cleaning tools remain free.
+Smart Cleaner is intended for users aged 18 and over and is not directed to children. We do not knowingly collect personal information from anyone under 18. If you believe that a child has provided personal information, please contact us and we will delete it.
 
-11 Contact Us
-For privacy questions, requests, or concerns, contact GenieLampApp using the developer contact information displayed on Smart Cleaner's Google Play Store listing.
+13. Changes to This Policy and the App
+
+We update this Policy when features or data practices change. When we make material changes, we will update the "Last updated" date and, where appropriate, notify you in the App before the change takes effect. Continued use after an update means you accept the revised Policy.
+
+Google Play handles subscription payments. Smart Cleaner verifies purchases and stores the confirmed entitlement status on the device so it can remove ads.
+
+14. Contact Us
+
+For privacy questions, requests, or concerns, contact GenieLampApp using the developer contact information displayed on Smart Cleaner's Google Play Store listing, or email:
+
+genielampapp@gmail.com
